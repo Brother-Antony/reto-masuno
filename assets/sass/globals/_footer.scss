@@ -1,0 +1,83 @@
+@use '../layout' as l;
+
+.footer {
+    padding: 71px 0 97.98px;
+    background-color: var(--color-primary);
+
+    a {
+        display: inline-block;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        .logo {
+            margin-top: 2rem;
+            width: 80px;
+            min-width: 80px;
+            margin-bottom: 35.72px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 14.29px;
+        }
+
+        &:nth-child(1) {
+            .title {
+                margin-bottom: 9.29px;
+            }
+        }
+
+        &:nth-child(2) {
+            ul {
+                margin-top: 28.97px;
+            }
+        }
+
+        &:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--phone {
+            margin-top: 24.97px;
+
+            span {
+                padding-left: 6px;
+            }
+
+            &:hover {
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &--book {
+            margin-top: 19.97px;
+
+            img {
+                margin: auto;
+            }
+        }
+
+        &--redes {
+            margin-top: 44.94px;
+            @include l.flex-center;
+            gap: 28px;
+        }
+
+        &--copy {
+            margin-top: auto;
+
+            .paragraph {
+                letter-spacing: -.01em;
+            }
+        }
+    }
+}

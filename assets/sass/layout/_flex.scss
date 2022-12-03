@@ -1,0 +1,64 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.fx {
+    display: flex;
+  
+    &-jc-sb {
+        justify-content: space-between;
+    }
+  
+    &-jc-sa {
+        justify-content: space-around;
+    }
+  
+    &-jc-c {
+        justify-content: center;
+    }
+  
+    &-jc-fe {
+        justify-content: flex-end;
+    }
+  
+    &-ai-c {
+        align-items: center;
+    }
+  
+    &-ai-b {
+        align-items: baseline;
+    }
+  
+    &-ai-fs {
+        align-items: flex-start;
+    }
+  
+    &-ai-fe {
+        align-items: flex-end;
+    }
+  
+    &-ai-s {
+        align-items: stretch;
+    }
+  
+    &-jc-fs {
+        justify-content: flex-start;
+    }
+  
+    &-jc-r {
+        justify-content: right;
+    }
+  
+    &-fw-w {
+        flex-wrap: wrap;
+    }
+  
+    &-fd-c {
+        flex-direction: column
+    }
+  
+    &-fd-rr {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,18 @@
+.technology {
+    padding: 33px 0 0;
+
+    .logo {
+        margin: 78px auto 58px;
+        width: 100px;
+        min-width: 100px;
+    }
+
+    &__title {
+        margin-bottom: 56px;
+        text-align: center;
+
+        h3 {
+            margin-top: 24px;
+        }
+    }
+}

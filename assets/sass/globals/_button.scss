@@ -1,0 +1,40 @@
+button {
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    background: none;
+}
+
+.btn {
+    background-color: var(--color-gray-sf);
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+
+    &.blue {
+        background-color: var(--color-primary);
+        color: var(--white);
+    }
+
+    &:hover {
+        background-color: var(--color-primary-sf);
+    }
+
+    &:active {
+        transform: scale(.96);
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: var(--color-gray);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--color-gray);
+        }
+    }
+}

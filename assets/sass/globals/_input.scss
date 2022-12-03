@@ -1,0 +1,33 @@
+select,
+textarea,
+input {
+    border-style: none;
+    background: none;
+    outline: none;
+    appearance: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.input,
+.textarea {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--color-primary-sf);
+    font-weight: normal;
+    width: 100%;
+    box-shadow: 0 0 0 1px var(--color-gray-sf) inset;
+
+    &::placeholder {
+        color: var(--color-gray-sf);
+    }
+  
+    &:focus {
+        box-shadow: 0 0 0 2px var(--color-primary) inset;
+    }
+}

@@ -1,0 +1,155 @@
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    color: var(--color-text);
+
+    &.extraBold24 {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 33px;
+    }
+
+    &.bold56 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 76px;
+    }
+
+    &.bold32 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+
+    &.bold20 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+    }
+
+    &.semiBold32 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 44px;
+    }
+
+    &.semiBold28 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 38px;
+    }
+
+    &.semiBold24 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+    }
+
+    &.semiBold18 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+
+    &.semiBold16 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+  
+    &.white {
+        color: var(--white);
+    }
+
+    &.graySF {
+        color: var(--color-gray-sf);
+    }
+
+    &.blue {
+        color: var(--color-primary);
+    }
+
+    &.blueSF {
+        color: var(--color-primary-sf);
+    }
+
+    &.fucsiaSF {
+        color: var(--color-fucsia-sf);
+    }
+
+    &.red,
+    .red {
+        color: var(--color-secundary);
+    }
+
+    &.redSF,
+    .redSF {
+        color: var(--color-secundary-sf);
+    }
+  
+    &.uppercase,
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .line {
+        margin: 10px auto 0;
+    }
+}
+
+.paragraph {
+    color: var(--color-text);
+
+    &.reg14 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+
+    &.light16 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+
+    &.blueSF {
+        color: var(--color-primary-sf);
+    }
+
+    &.red,
+    .red {
+        color: var(--color-secundary);
+    }
+
+    &.white {
+        color: var(--white);
+    }
+
+    &.hover-decoration {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

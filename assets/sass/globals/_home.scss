@@ -1,0 +1,72 @@
+@use '../layout' as l;
+
+.bgHome {
+    background-color: var(--color-primary);
+}
+
+.home {
+    padding-top: 51px;
+    padding-bottom: 64px;
+
+    .wrap {
+        @include l.flex-center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        flex: auto;
+
+        &--iconsText {
+            @include l.flex-center;
+            gap: 19.2px;
+        }
+
+        &--title {
+            margin-top: 11px;
+
+            h1 {
+                width: 100%;
+                max-width: 380px;
+
+                span {
+                    &:nth-child(2) {
+                        font-size: 40px;
+                    }
+
+                    &:nth-child(3) {
+                        position: relative;
+                        margin-left: 6px;
+
+                        img {
+                            position: absolute;
+                            right: 0;
+                            bottom: -13px;
+                        }
+                    }
+                }
+            }
+
+            h3,
+            .offer {
+                margin-top: 44px;
+            }
+
+            .offer {
+                width: 100%;
+                max-width: 551px;
+            }
+        }
+    }
+
+    &__right {
+        flex: auto;
+
+        .data {
+            margin-left: auto;
+
+            .form {
+                margin-top: 24px;
+            }
+        }
+    }
+}
