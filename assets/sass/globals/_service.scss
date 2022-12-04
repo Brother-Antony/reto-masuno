@@ -14,17 +14,14 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        grid-column-gap: 20px;
         grid-row-gap: 50px;
-        margin-left: -70px;
+        margin-left: -20px;
     }
 
     &__box {
-        // width: 100%;
-        // max-width: 362px;
-        flex: 0 0 calc(33.33% - 20px);
-        max-width: calc(33.33% - 20px);
-        padding-left: 70px;
+        flex: 0 0 calc(27.33% - 20px);
+        max-width: calc(27.33% - 20px);
+        padding-left: 20px;
         text-align: center;
 
         .circle {

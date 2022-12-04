@@ -99,6 +99,10 @@ a {
         color: var(--color-fucsia-sf);
     }
 
+    &.black {
+        color: var(--color-black);
+    }
+
     &.red,
     .red {
         color: var(--color-secundary);

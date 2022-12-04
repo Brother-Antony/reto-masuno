@@ -69,12 +69,8 @@ li {
     -webkit-box-orient: vertical;
     overflow: hidden;
   
-    &.line-1 {
-        -webkit-line-clamp: 1;
-    }
-  
-    &.line-2 {
-        -webkit-line-clamp: 2;
+    &.line-4 {
+        -webkit-line-clamp: 4;
     }
 }
 

@@ -7,10 +7,12 @@
     <title>Design & Development</title>
 
     <script src="https://kit.fontawesome.com/3ebe5f560f.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -220,6 +222,64 @@
                 </h2>
             </div>
         </div>
+
+        <div class="technology__row">
+            <div class="technology__row--left">
+                <div class="container">
+                    <div id="carouselTechnology" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                            <div class="carousel-item active relative float-left w-full">
+                                <img src="assets/img/iconsStar.svg" alt="">
+                                <h3 class="title bold32 red uppercase">php</h3>
+                                <p class="title semiBold18 black textHideLine line-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis tenetur, aliquam tempore reprehenderit, repellendus mollitia ipsum consequatur veniam architecto saepe maxime quod, ea quaerat eligendi obcaecati neque? Ab, tempore nostrum?</p>
+                                <a href="" class="btn blue">Ver tecnología</a>
+                            </div>
+
+                            <div class="carousel-item relative float-left w-full">
+                                <img src="assets/img/iconsStar.svg" alt="">
+                                <h3 class="title bold32 red uppercase">MYSQL</h3>
+                                <p class="title semiBold18 black textHideLine line-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis tenetur, aliquam tempore reprehenderit, repellendus mollitia ipsum consequatur veniam architecto saepe maxime quod, ea quaerat eligendi obcaecati neque? Ab, tempore nostrum?</p>
+                                <a href="" class="btn blue">Ver tecnología</a>
+                            </div>
+
+                            <div class="carousel-item relative float-left w-full">
+                                <img src="assets/img/iconsStar.svg" alt="">
+                                <h3 class="title bold32 red uppercase">MONGO BD</h3>
+                                <p class="title semiBold18 black textHideLine line-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis tenetur, aliquam tempore reprehenderit, repellendus mollitia ipsum consequatur veniam architecto saepe maxime quod, ea quaerat eligendi obcaecati neque? Ab, tempore nostrum?</p>
+                                <a href="" class="btn blue">Ver tecnología</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselTechnology"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselTechnology"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselTechnology"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="technology__row--right">
+                <img src="assets/img/technology.png" alt="">
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -274,6 +334,10 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     
 </body>
 </html>

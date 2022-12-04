@@ -116,11 +116,8 @@ li {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.textHideLine.line-1 {
-  -webkit-line-clamp: 1;
-}
-.textHideLine.line-2 {
-  -webkit-line-clamp: 2;
+.textHideLine.line-4 {
+  -webkit-line-clamp: 4;
 }
 
 .hamburguer span {
@@ -376,6 +373,9 @@ a {
 .title.fucsiaSF {
   color: var(--color-fucsia-sf);
 }
+.title.black {
+  color: var(--color-black);
+}
 .title.red,
 .title .red {
   color: var(--color-secundary);
@@ -429,6 +429,7 @@ a {
   --color-gray-sf: #B7B1A9;
   --color-fucsia-sf: #DB0FA8;
   --color-text: #595959;
+  --color-black: #2E2E2E;
 }
 
 select,
@@ -583,14 +584,13 @@ button {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  grid-column-gap: 20px;
   grid-row-gap: 50px;
-  margin-left: -70px;
+  margin-left: -20px;
 }
 .service__box {
-  flex: 0 0 calc(33.33% - 20px);
-  max-width: calc(33.33% - 20px);
-  padding-left: 70px;
+  flex: 0 0 calc(27.33% - 20px);
+  max-width: calc(27.33% - 20px);
+  padding-left: 20px;
   text-align: center;
 }
 .service__box .circle {
@@ -628,11 +628,74 @@ button {
   min-width: 100px;
 }
 .technology__title {
-  margin-bottom: 56px;
   text-align: center;
 }
 .technology__title h3 {
   margin-top: 24px;
+}
+.technology__row {
+  position: relative;
+  margin-top: 56px;
+  height: 598px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.technology__row--left {
+  position: absolute;
+  inset: 0;
+}
+.technology__row--left .carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 24px 72px 1.4rem;
+  height: 100%;
+}
+.technology__row--left .carousel-inner {
+  position: relative;
+  width: 100%;
+  max-width: 495px;
+  overflow: hidden;
+}
+.technology__row--left .carousel-inner h3 {
+  margin: 21px 0;
+}
+.technology__row--left .carousel-inner .btn {
+  width: 100%;
+  max-width: 240px;
+  margin-top: 25px;
+}
+.technology__row--left .carousel-indicators {
+  bottom: 78px;
+  right: initial;
+  left: 1.4rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.technology__row--left .carousel-indicators [data-bs-target] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #E3E3E3;
+  border: 0;
+  margin: 0;
+}
+.technology__row--left .carousel-indicators [data-bs-target].active {
+  background-color: var(--color-primary);
+}
+.technology__row--right {
+  width: 100%;
+  height: 100%;
+  max-width: calc(50% - 4.5rem);
+}
+.technology__row--right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .footer {

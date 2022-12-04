@@ -1,3 +1,5 @@
+@use '../layout' as l;
+
 .technology {
     padding: 33px 0 0;
 
@@ -8,11 +10,82 @@
     }
 
     &__title {
-        margin-bottom: 56px;
         text-align: center;
 
         h3 {
             margin-top: 24px;
+        }
+    }
+
+    &__row {
+        position: relative;
+        margin-top: 56px;
+        height: 598px;
+        @include l.flex-center;
+        justify-content: end;
+
+        &--left {
+            position: absolute;
+            inset: 0;
+
+            .carousel {
+                position: relative;
+                @include l.flex-center;
+                padding: 0 24px 72px 1.4rem;
+                height: 100%;
+
+                &-inner {
+                    position: relative;
+                    width: 100%;
+                    max-width: 495px;
+                    overflow: hidden;
+
+                    h3 {
+                        margin: 21px 0;
+                    }
+
+                    .btn {
+                        width: 100%;
+                        max-width: 240px;
+                        margin-top: 25px;
+                    }
+                }
+
+                &-indicators {
+                    bottom: 78px;
+                    right: initial;
+                    left: 1.4rem;
+                    margin: 0;
+                    @include l.flex-center;
+                    gap: 8px;
+
+                    [data-bs-target] {
+                        cursor: pointer;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: #E3E3E3;
+                        border: 0;
+                        margin: 0;
+
+                        &.active {
+                            background-color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        &--right {
+            width: 100%;
+            height: 100%;
+            max-width: calc(50% - 4.5rem);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
