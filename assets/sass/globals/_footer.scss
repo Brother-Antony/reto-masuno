@@ -1,4 +1,5 @@
 @use '../layout' as l;
+@use '../util' as u;
 
 .footer {
     padding: 71px 0 97.98px;
@@ -11,14 +12,15 @@
     .row {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 32px;
     }
 
     &__box {
         .logo {
-            margin-top: 2rem;
             width: 80px;
             min-width: 80px;
-            margin-bottom: 35.72px;
+            margin: 2rem 0 35.72px;
         }
 
         ul {
@@ -77,6 +79,85 @@
 
             .paragraph {
                 letter-spacing: -.01em;
+            }
+        }
+    }
+
+    @include u.breakpoint-down(large) {
+        padding: 48px 0;
+
+        &__box {
+            .logo {
+                width: 38px;
+                min-width: 38px;
+                margin: 0 0 35px;
+            }
+
+            ul {
+                gap: 0;
+            }
+
+            h3,
+            ul li a {
+                font-size: 14px !important;
+                line-height: 18px !important;
+            }
+
+            &:nth-child(1) {
+                .title {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:nth-child(2) {
+                ul {
+                    margin-top: 0;
+                }
+            }
+    
+            ul li {
+                margin-top: 16px;
+            }
+
+            &--phone {
+                font-size: 18px !important;
+                line-height: normal !important;
+                margin-top: 16px;
+    
+                span {
+                    padding-left: 4px;
+                }
+            }
+
+            &--redes {
+                margin-top: 26px;
+                gap: 12px;
+            }
+
+            &--copy {
+                .paragraph {
+                    font-size: 14px;
+                    letter-spacing: -.01em;
+                }
+            }
+        }
+    }
+
+    @include u.breakpoint-down(medium) {
+        &__box {
+            width: 100%;
+            text-align: center;
+
+            .logo {
+                margin: 0 auto 35px;
+            }
+
+            &--redes {
+                justify-content: center;
+            }
+
+            &--copy {
+                margin-top: 2rem;
             }
         }
     }

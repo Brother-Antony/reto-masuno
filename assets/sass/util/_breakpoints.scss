@@ -1,24 +1,9 @@
 // 500px, 768px, 1127px
-$breakpoints-up: (
-    medium: 500px,
-    large: 768px,
-    xlarge: 1127px
-);
-
-// 499px, 767px, 1126px
 $breakpoints-down: (
-    small: 499.9375px,
-    medium: 767.9375px,
-    large: 1126.9375px
+    small: 500px,
+    medium: 768px,
+    large: 1400px
 );
-
-@mixin breakpoint-up($size) {
-    @if map-has-key($breakpoints-up, $size) {
-        @media (min-width: #{map-get($breakpoints-up, $size)}) {
-            @content;
-        }
-    }
-}
 
 @mixin breakpoint-down($size) {
     @if map-has-key($breakpoints-down, $size) {

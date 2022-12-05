@@ -1,12 +1,12 @@
 @use '../layout' as l;
+@use '../util' as u;
 
 .bgHome {
     background-color: var(--color-primary);
 }
 
 .home {
-    padding-top: 51px;
-    padding-bottom: 64px;
+    padding: 51px 0 64px;
 
     .wrap {
         @include l.flex-center;
@@ -15,6 +15,12 @@
 
     &__left {
         flex: auto;
+
+        .offer {
+            margin-top: 44px;
+            width: 100%;
+            max-width: 551px;
+        }
 
         &--iconsText {
             @include l.flex-center;
@@ -46,14 +52,8 @@
                 }
             }
 
-            h3,
-            .offer {
+            h3 {
                 margin-top: 44px;
-            }
-
-            .offer {
-                width: 100%;
-                max-width: 551px;
             }
         }
     }
@@ -67,6 +67,60 @@
             .form {
                 margin-top: 24px;
             }
+        }
+    }
+
+    @include u.breakpoint-down(large) {
+        padding: 40px 0;
+
+        &__left {
+            .offer {
+                max-width: 480px;
+            }
+
+            &--iconsText {
+                gap: 8px;
+
+                img {
+                    width: 75px;
+                }
+
+                .title {
+                    font-size: 22px;
+                }
+            }
+
+            &--title {
+                h1 {
+                    max-width: 342px;
+                    font-size: 54px !important;
+                    line-height: normal !important;
+                }
+
+                h3 {
+                    margin-top: 38px;
+                    font-size: 24px !important;
+                    line-height: normal !important;
+                }
+            }
+        }
+    }
+
+    @include u.responsive(1170px) {
+        .wrap {
+            flex-direction: column;
+        }
+
+        &__left {
+            @include l.flex-center;
+            gap: 30px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        &__right {
+            margin-top: 5rem;
         }
     }
 }

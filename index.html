@@ -29,51 +29,53 @@
             <div class="container">
                 <div class="wrap">
                     <div class="home__left">
-                        <div class="home__left--iconsText">
-                            <img src="assets/img/iconsCyber.svg" alt="">
+                        <div>
+                            <div class="home__left--iconsText">
+                                <img src="assets/img/iconsCyber.svg" alt="">
 
-                            <div class="title semiBold24 uppercase white">es hora de</div>
+                                <div class="title semiBold24 uppercase white">es hora de</div>
+                            </div>
+
+                            <div class="home__left--title">
+                                <h1 class="title bold56 white">
+                                    <span class="uppercase">cyber days</span>
+                                    <span class="uppercase">en</span>
+                                    <span>
+                                        Más uno
+                                        <img src="assets/img/lineMasUno.svg" alt="">
+                                    </span>
+                                </h1>
+
+                                <h3 class="title semiBold28 white">Del <b>28</b> al <b>30</b> de marzo</h3>
+                            </div>
                         </div>
 
-                        <div class="home__left--title">
-                            <h1 class="title bold56 white">
-                                <span class="uppercase">cyber days</span>
-                                <span class="uppercase">en</span>
-                                <span>
-                                    Más uno
-                                    <img src="assets/img/lineMasUno.svg" alt="">
-                                </span>
-                            </h1>
+                        <div class="offer">
+                            <img src="assets/img/iconScissors.svg" class="offer__icon" alt="">
 
-                            <h3 class="title semiBold28 white">Del <b>28</b> al <b>30</b> de marzo</h3>
+                            <div class="box">
+                                <h2 class="title semiBold32 fucsiaSF">
+                                    Regístrate y obtén
+                                    <img src="assets/img/lineOffer.svg" alt="">
+                                </h2>
 
-                            <div class="offer">
-                                <img src="assets/img/iconScissors.svg" class="offer__icon" alt="">
-
-                                <div class="box">
-                                    <h2 class="title semiBold32 fucsiaSF">
-                                        Regístrate y obtén
-                                        <img src="assets/img/lineOffer.svg" alt="">
-                                    </h2>
-
-                                    <div class="box__wrap">
-                                        <div class="box__wrap--left">
-                                            <img src="assets/img/10Percentage.png" alt="">
-                                        </div>
-
-                                        <div class="box__wrap--right">
-                                            <div class="title semiBold24 blueSF">En tu primera compra de</div>
-                                            <div class="title semiBold24 fucsiaSF uppercase">cyber days</div>
-                                        </div>
+                                <div class="box__wrap">
+                                    <div class="box__wrap--left">
+                                        <img src="assets/img/10Percentage.png" alt="">
                                     </div>
 
-                                    <div class="box__desc paragraph reg14 blueSF">
-                                        <div>Aplicamos el descuento mediante un código que se te eviará a tu correo registrado.</div>
-                                        <br>
-                                        <div>Cupón válido del 28 al 30 de marzo.</div>
-                                        <br>
-                                        <div>*Aplican términos y condiciones</div>
+                                    <div class="box__wrap--right">
+                                        <div class="title semiBold24 blueSF">En tu primera compra de</div>
+                                        <div class="title semiBold24 fucsiaSF uppercase">cyber days</div>
                                     </div>
+                                </div>
+
+                                <div class="box__desc paragraph reg14 blueSF">
+                                    <div>Aplicamos el descuento mediante un código que se te eviará a tu correo registrado.</div>
+                                    <br>
+                                    <div>Cupón válido del 28 al 30 de marzo.</div>
+                                    <br>
+                                    <div>*Aplican términos y condiciones</div>
                                 </div>
                             </div>
                         </div>
@@ -93,60 +95,90 @@
                                     <div class="form__wrap--box">
                                         <label for="nombre">
                                             <div class="title semiBold16 graySF">Nombres <span class="redSF">*</span></div>
-                                            <input type="text" placeholder="Ingrese sus nombres" class="input" id="nombre">
+                                            <input type="text" placeholder="Ingrese sus nombres" class="input" id="nombre" required>
                                         </label>
                                     </div>
 
                                     <div class="form__wrap--box">
                                         <label for="apellido">
                                             <div class="title semiBold16 graySF">Apellidos <span class="redSF">*</span></div>
-                                            <input type="text" placeholder="Ingrese sus apellidos" class="input" id="apellido">
+                                            <input type="text" placeholder="Ingrese sus apellidos" class="input" id="apellido" required>
                                         </label>
                                     </div>
 
                                     <div class="form__wrap--box">
                                         <label for="tel">
                                             <div class="title semiBold16 graySF">Teléfono celular <span class="redSF">*</span></div>
-                                            <input type="text" placeholder="Ingrese su número telefonico" class="input" id="tel">
+                                            <input type="text" placeholder="Ingrese su número telefonico" class="input" id="tel" required>
                                         </label>
                                     </div>
 
                                     <div class="form__wrap--box">
                                         <label for="correo">
                                             <div class="title semiBold16 graySF">Correo electrónico <span class="redSF">*</span></div>
-                                            <input type="text" placeholder="Ingrese su correo electrónico" class="input" id="correo">
+                                            <input type="email" placeholder="Ingrese su correo electrónico" class="input" id="correo" required>
                                         </label>
                                     </div>
 
                                     <div class="form__wrap--box">
                                         <label for="fav">
                                             <div class="title semiBold16 graySF">Tus favoritos <span class="redSF">*</span></div>
-                                            <select name="" class="textarea" id="fav">
-                                                <option value="1" selected>Pollo, Cerdo, Embutidos Cominos</option>
-                                            </select>
+                                            <div class="selectIcon">
+                                                <select name="" class="select" id="fav">
+                                                    <option value="1" selected>Pollo, Cerdo, Embutidos Cominos</option>
+                                                </select>
+
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
                                         </label>
                                     </div>
 
                                     <div class="form__wrap--box">
-                                        <div class="wrap">
-                                            <img src="assets/img/captcha.png" alt="">
+                                        <div class="captcha">
+                                            <div class="captcha__img">
+                                                <img src="assets/img/captcha.png" alt="">
+                                            </div>
 
                                             <div>
                                                 <button type="button" class="btn blue"><i class="fa-regular fa-rotate-right"></i></button>
                                             </div>
                                         </div>
 
-                                        <input type="text" placeholder="Ingrese captcha" class="input">
+                                        <input type="text" placeholder="Ingrese captcha" class="input" required>
                                     </div>
                                 </div>
 
-                                <div></div>
+                                <div class="form__option">
+                                    <div class="fx">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="terminos">
+                                            <span class="icon blue">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21.732" height="16.206" viewBox="0 0 21.732 16.206">
+                                                    <path d="M7.381,20.465.318,13.4a1.087,1.087,0,0,1,0-1.537l1.537-1.537a1.087,1.087,0,0,1,1.537,0L8.15,15.086,18.341,4.9a1.087,1.087,0,0,1,1.537,0l1.537,1.537a1.087,1.087,0,0,1,0,1.537l-12.5,12.5A1.087,1.087,0,0,1,7.381,20.465Z" transform="translate(0 -4.577)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            <div class="paragraph reg14">Acepto los <a href="" class="title bold14 blueSF hover-decoration">Términos y políticas de privacidad</a></div>
+                                        </label>
+                                    </div>
+
+                                    <div class="fx">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="terminos" checked>
+                                            <span class="icon blue">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21.732" height="16.206" viewBox="0 0 21.732 16.206">
+                                                    <path d="M7.381,20.465.318,13.4a1.087,1.087,0,0,1,0-1.537l1.537-1.537a1.087,1.087,0,0,1,1.537,0L8.15,15.086,18.341,4.9a1.087,1.087,0,0,1,1.537,0l1.537,1.537a1.087,1.087,0,0,1,0,1.537l-12.5,12.5A1.087,1.087,0,0,1,7.381,20.465Z" transform="translate(0 -4.577)" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            <div class="paragraph reg14">Acepto el <a href="" class="title bold14 blueSF hover-decoration">Uso de datos personales</a></div>
+                                        </label>
+                                    </div>
+                                </div>
 
                                 <div class="form__btn">
                                     <input type="submit" class="btn blue" value="Registrarme" disabled>
                                 </div>
 
-                                <div class="paragraph reg14 form__desc">Aprovecha las mejores ofertas y descuentos en cerdo, congelados, embutidos <b class="red">y mucho más</b>. No te pierdas de nada estos Cyberdays registrándote y obteniendo grandes descuentos exclusivos.</div>
+                                <div class="paragraph reg14 form__desc">Aprovecha las mejores ofertas y descuentos en cerdo, congelados, embutidos <b><a href="" class="red hover-decoration inline-block">y mucho más</a></b>. No te pierdas de nada estos Cyberdays registrándote y obteniendo grandes descuentos exclusivos.</div>
                             </form>
                         </div>
                     </div>
@@ -287,12 +319,14 @@
             <div class="row">
                 <div class="footer__box">
                     <img src="assets/img/logo.svg" class="logo" alt="logo masuno">
-                    <div class="title bold20 white">Nosotros</div>
-                    <a href="" class="paragraph hover-decoration white">Somos Mas uno</a>
+                    <h3 class="title bold20 white">Nosotros</h3>
+                    <ul>
+                        <li><a href="" class="paragraph hover-decoration white">Somos Mas uno</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer__box">
-                    <div class="title bold20 white">Te informamos</div>
+                    <h3 class="title bold20 white">Te informamos</h3>
                     <ul>
                         <li><a href="" class="paragraph hover-decoration white">Preguntas frecuentes</a></li>
                         <li><a href="" class="paragraph hover-decoration white">Términos y condiciones</a></li>
@@ -306,7 +340,7 @@
                 </div>
 
                 <div class="footer__box">
-                    <div class="title bold20 white">Contáctanos</div>
+                    <h3 class="title bold20 white">Contáctanos</h3>
 
                     <a href="" class="title bold20 white footer__box--phone">
                         <i class="fa-solid fa-phone"></i>

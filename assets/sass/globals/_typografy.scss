@@ -49,6 +49,12 @@ a {
         line-height: 27px;
     }
 
+    &.bold14 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+    }
+
     &.semiBold32 {
         font-size: 32px;
         font-weight: 600;
@@ -121,6 +127,12 @@ a {
     .line {
         margin: 10px auto 0;
     }
+
+    &.hover-decoration {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .paragraph {
@@ -151,7 +163,8 @@ a {
         color: var(--white);
     }
 
-    &.hover-decoration {
+    &.hover-decoration,
+    .hover-decoration {
         &:hover {
             text-decoration: underline;
         }

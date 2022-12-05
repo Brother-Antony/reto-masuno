@@ -1,3 +1,6 @@
+@use '../layout' as l;
+@use '../util' as u;
+
 select,
 textarea,
 input {
@@ -12,7 +15,8 @@ input {
 }
 
 .input,
-.textarea {
+.textarea,
+.select {
     padding: 8px 16px;
     font-size: 16px;
     line-height: 22px;
@@ -29,5 +33,29 @@ input {
   
     &:focus {
         box-shadow: 0 0 0 2px var(--color-primary) inset;
+    }
+
+    @include u.breakpoint-down(large) {
+        padding: 12px;
+        line-height: 20px;
+        border-radius: 8px;
+    }
+}
+
+.selectIcon {
+    position: relative;
+
+    .select {
+        padding-right: 40px;
+    }
+
+    i {
+        font-size: 15px;
+        position: absolute;
+        right: 16px;
+        top: 0;
+        bottom: 0;
+        @include l.flex-center;
+        color: var(--color-primary);
     }
 }
